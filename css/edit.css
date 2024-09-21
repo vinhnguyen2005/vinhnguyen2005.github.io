@@ -1,0 +1,188 @@
+
+
+#menu_text {
+    margin: 0;
+
+}
+
+#menu_text {
+    background-color: #2f7f8a;
+    text-align: center;
+    padding: 60px;
+}
+
+a {
+    color: rgb(64, 61, 83)
+}
+
+
+nav {
+    background-color: #292323;
+    overflow: hidden;
+}
+
+nav a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    display: block;
+    float: left;
+}
+
+.menu_left {
+    float: left;
+}
+
+.menu_right {
+    float: left;
+}
+
+
+nav a:hover {
+    background-color: #a79c8d;
+    color: black;
+}
+
+#left_side {
+    flex: 30%;
+    background-color: rgb(212, 212, 212);
+    padding: 10px 20px;
+}
+
+#right_side {
+    flex: 70%;
+    padding: 10px 20px;
+    background-color: #afaf8b;
+}
+
+#flex_container {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+#gpatable {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#gpatable td, #gpatable th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#gpatable tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#gpatable tr:hover {
+    background-color: #ddd;
+}
+
+#gpatable th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #305447;
+    color: white;
+}
+
+
+
+#blog_container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.blog_item {
+    flex: 33%;
+    text-align: center;
+}
+
+.blog_image {
+    width: 90%;
+}
+
+.blog_title {
+    font-size: 100%;
+    font-weight: bold;
+    padding: 10px 10px 30px 10px;
+}
+
+.contact {
+    margin: 3px;
+    border-top: 2px solid #ccc;
+    padding: 3px;
+    background-color: #d8d8d8a6;
+    text-align: left; 
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-list :hover {
+    text-decoration: underline;
+    color: black;
+}
+
+.contact-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    text-align: left; 
+}
+
+.contact-list a {
+    text-decoration: none;
+    color: #6497d1;
+}
+
+
+
+
+@media screen and (max-width: 600px) {
+    #left_side {
+        flex: 100%;
+    }
+
+    #right_side {
+        flex: 100%;
+    }
+
+    #flex_container {
+        flex-wrap: wrap;
+    }
+
+    .blog_item {
+        flex: 50%;   
+    }
+}
+
+
+@media screen and (max-width: 400px) {
+    #left_side {
+        flex: 100%;
+    }
+
+    #right_side {
+        flex: 100%;
+    }
+
+    #flex_container {
+        flex-wrap: wrap;
+    }
+
+    .blog_item {
+        flex: 50%;   
+    }
+}
+
+
+
+
+
+
